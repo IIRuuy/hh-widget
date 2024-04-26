@@ -1,0 +1,143 @@
+.widget {
+    width: 100vh;
+    margin: auto;
+}
+
+.logo { 
+    display: grid;
+    grid-template-columns: auto 1fr;
+    align-items: center;
+    margin: 3vh 0;
+    img {
+        width: 10vh;
+    }
+    div {
+        font-size: 3.4vh;
+        font-weight: 600;
+        margin-left: 2vh;
+    }
+}
+
+.search {
+    display: grid;
+    grid-template-columns: 1fr 10vh;
+    background-color: rgb(248, 248, 248);
+    height: 6vh;
+    border-radius: 1vh;
+    overflow: hidden;
+    margin: auto;
+    margin: 1vh 0;
+    input {
+        border: none;
+        background-color: transparent;
+        padding-left: 1vh;
+        font-size: 2vh;
+    }
+    button {
+        font-size: 2vh;
+        border: 0;
+        border-radius: 0;
+        background-color: rgb(243, 243, 243);
+        cursor: pointer;
+        &:hover {
+            background-color: rgb(231, 231, 231);
+        }
+        &:active {
+            background-color: rgb(223, 223, 223);
+        }
+    }
+}
+
+.content {
+    display: grid;
+    min-height: 80vh;
+    .preloader {
+        margin: auto;
+    }
+    .card {
+        margin: 1vh 0;
+        padding: 2vh;
+        border-radius: 1vh;
+        display: grid;
+        grid-template-columns: 1fr auto;
+        box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+        .name {
+            font-size: 2.4vh;
+            font-weight: 600;
+            color: rgb(53, 143, 246);
+        }
+        .area {
+            font-size: 1.8vh;
+            margin: .5vh 0;
+        }
+        .employer {
+            font-size: 1.8vh;
+            margin: .5vh 0;
+            color: black;
+            text-decoration: none;
+        }
+        .salaryAndExperiens{
+            display: flex;
+            height: 4vh;
+            margin: 1vh 0;
+            .experience {
+                width: auto;
+                display: grid;
+                align-items: center;
+                text-align: center;
+                background-color: rgb(240, 242, 244);
+                padding: .8vh;
+                border-radius: 1vh;
+                font-size: 1.7vh;
+                color: rgb(57, 59, 61);
+            }
+            .salary{
+                display: flex;
+                div {
+                    font-weight: 500;
+                    font-size: 2vh;
+                    margin: 1vh 1vh 1vh 0;
+                }
+            }
+        }
+        .logo {
+            align-self: center;
+            img {
+                width: 10vh;
+            }
+        }
+
+        transform-origin: 50% 100%;
+        -webkit-transition-duration: .4s;
+        -o-transition-duration: .4s;
+        transition-duration: .4s;
+        &:hover {
+            -webkit-transition-duration: .2s;
+            -o-transition-duration: .2s;
+            transition-duration: .2s;
+            
+            
+            transform: scale(1.02) translateY(0);
+        }
+    }
+}
+
+.pagination {
+    margin: 1vh 1vh 2vh 1vh;
+    display: grid;
+    justify-content: center;
+    button {
+        font-size: 2vh;
+        max-width: 2vh !important;
+        width: 5vh !important;
+        height: 6vh !important;
+        margin: .5vh !important;
+        padding: 3vh !important;
+    }
+    svg {
+        font-size: 3vh;
+    }
+    li div {
+        font-size: 2vh;
+    }
+}
